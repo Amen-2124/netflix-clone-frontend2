@@ -10,6 +10,14 @@
   transition: background-color 0.4s ease;
 }
 
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.chevronRotate {
+  transform: rotate(180deg);
+}
 .Scrolled {
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -247,6 +255,64 @@
   font-size: 15px;
   padding: 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+
+}
+
+
+/* ---------- Mobile Navigation ---------- */
+
+.mobileNavToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #f5f5f1;
+  cursor: pointer;
+  padding: 4px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1002; /* Ensures toggle stays above the menu overlay */
+}
+
+
+
+.mobileNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 24px 24px 24px;
+  gap: 20px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1001; 
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.9);
+}
+
+
+
+
+
+/* Slide in drawer when menu state is active */
+.mobileNav.open {
+  transform: translateX(0);
+}
+
+.mobileNav .navLink {
+  font-size: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e5e5e5;
+  text-decoration: none;
+  display: block;
+}
+
+.mobileNav .navLink:hover {
+  color: #b3b3b3;
 }
 
 /* ---------- Responsive ---------- */

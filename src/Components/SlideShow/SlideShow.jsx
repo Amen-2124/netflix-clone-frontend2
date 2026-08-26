@@ -23,15 +23,15 @@ function SlideShow({ title, movies }) {
               spaceBetween: 6,
             },
             480: {
-              slidesPerView: 3,
+              slidesPerView: 3.1,
               spaceBetween: 10,
             },
             768: {
-              slidesPerView: 4,
+              slidesPerView:4,
               spaceBetween: 30,
             },
             1024: {
-              slidesPerView: 5,
+              slidesPerView: 5.1,
               spaceBetween: 100,
             },
           
