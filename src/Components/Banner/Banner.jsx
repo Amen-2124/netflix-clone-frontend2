@@ -66,4 +66,4 @@ backgroundImage: `url("${BANNER_BASE}${bannerImage.backdrop_path}") `
   )
 }
 
-export default Banner
+export default Banner;
